@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MindFlow helps you manage tasks, build habits, and achieve your goals.">
+  <title>MindFlow | Turn Ideas Into Progress</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="#home" class="logo">
+      <span class="logo-icon">M</span>
+      MindFlow
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false"
+      aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#get-started" class="nav-cta">Get Started <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          PLAN &nbsp;·&nbsp; FOCUS &nbsp;·&nbsp; ACHIEVE
+        </div>
+
+        <h1>Turn Your Ideas Into <span>Real Progress.</span></h1>
+
+        <p class="hero-description">
+          Meet your all-in-one productivity companion. Organize your
+          tasks, set meaningful goals, and build better habits —
+          all in one beautiful place.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#get-started" class="btn btn-primary">
+            Get Started Free <span>→</span>
+          </a>
+          <a href="#how-it-works" class="btn btn-secondary">
+            <span class="play-icon">▶</span> See How It Works
+          </a>
+        </div>
+
+        <div class="trust-row">
+          <div class="avatar-stack">
+            <img src="https://i.pravatar.cc/80?img=47" alt="User">
+            <img src="https://i.pravatar.cc/80?img=12" alt="User">
+            <img src="https://i.pravatar.cc/80?img=33" alt="User">
+            <img src="https://i.pravatar.cc/80?img=5" alt="User">
+          </div>
+          <div>
+            <div class="stars">★★★★★</div>
+            <p>Trusted by <strong>10,000+</strong> happy users</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard preview -->
+      <div class="hero-visual">
+        <div class="dashboard-window">
+          <div class="window-bar">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>mindflow.app/dashboard</span>
+            <span>•••</span>
+          </div>
+
+          <div class="dashboard-body">
+            <aside class="dashboard-sidebar">
+              <div class="mini-brand"><span>M</span> MindFlow</div>
+              <div class="side-item selected">▦ &nbsp; Dashboard</div>
+              <div class="side-item">✓ &nbsp; My Tasks</div>
+              <div class="side-item">◎ &nbsp; Goals</div>
+              <div class="side-item">↗ &nbsp; Analytics</div>
+              <div class="side-item">⚙ &nbsp; Settings</div>
+              <div class="sidebar-bottom">
+                <div class="profile-circle">A</div>
+                <div><strong>Alex Morgan</strong><small>Free Plan</small></div>
+              </div>
+            </aside>
+
+            <div class="dashboard-main">
+              <div class="welcome-row">
+                <div>
+                  <h3>Good morning, Alex! 👋</h3>
+                  <p>Here's your productivity overview.</p>
+                </div>
+                <span class="date-pill">Today, Oct 14</span>
+              </div>
+
+              <div class="stats-grid">
+                <div class="stat-card">
+                  <span>Today's Tasks</span>
+                  <strong>12</strong>
+                  <small>↑ 3 added today</small>
+                </div>
+                <div class="stat-card">
+                  <span>Completed</span>
+                  <strong class="green">08</strong>
+                  <small>Great progress!</small>
+                </div>
+                <div class="stat-card">
+                  <span>In Progress</span>
+                  <strong class="purple">04</strong>
+                  <small>Keep going</small>
+                </div>
+              </div>
+
+              <div class="dashboard-lower">
+                <div class="task-panel">
+                  <div class="panel-heading">
+                    <strong>Today's Focus</strong><a href="#features">View all</a>
+                  </div>
+                  <label class="task-row">
+                    <input type="checkbox" checked>
+                    <span class="task-text done">Review project proposal</span>
+                    <span class="task-tag tag-green">Done</span>
+                  </label>
+                  <label class="task-row">
+                    <input type="checkbox">
+                    <span class="task-text">Build landing page</span>
+                    <span class="task-tag tag-purple">High</span>
+                  </label>
+                  <label class="task-row">
+                    <input type="checkbox">
+                    <span class="task-text">Team meeting at 3 PM</span>
+                    <span class="task-tag tag-blue">Work</span>
+                  </label>
+                  <label class="task-row">
+                    <input type="checkbox">
+                    <span class="task-text">Read 20 pages</span>
+                    <span class="task-tag tag-orange">Personal</span>
+                  </label>
+                </div>
+
+                <div class="progress-panel">
+                  <strong>Weekly Progress</strong>
+                  <div class="progress-ring"><span>76%<small>Complete</small></span></div>
+                  <p>You're doing amazing!</p>
+                  <div class="mini-bars">
+                    <i style="height:35%"></i>
+                    <i style="height:55%"></i>
+                    <i style="height:45%"></i>
+                    <i style="height:80%"></i>
+                    <i style="height:65%"></i>
+                    <i style="height:100%"></i>
+                    <i style="height:50%"></i>
+                  </div>
+                  <div class="bar-labels"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-card float-top">
+          <span class="float-icon">⚡</span>
+          <div><strong>Productivity up!</strong><small>You're on a 7-day streak</small></div>
+        </div>
+        <div class="floating-card float-bottom">
+          <span class="float-icon green-icon">✓</span>
+          <div><strong>Goal achieved!</strong><small>One step closer to success</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section features-section" id="features">
+      <div class="section-heading">
+        <span class="section-label">POWERFUL FEATURES</span>
+        <h2>Everything You Need to <span>Succeed.</span></h2>
+        <p>All the tools you need to stay organized, focused, and productive.</p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon purple-bg">✓</div>
+          <h3>Smart Task Management</h3>
+          <p>Organize daily tasks, set priorities, and never miss an important deadline.</p>
+          <a href="#get-started">Explore feature ↗</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon green-bg">◎</div>
+          <h3>Goal Setting</h3>
+          <p>Break big ambitions into achievable milestones and track your progress.</p>
+          <a href="#get-started">Explore feature ↗</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon blue-bg">▦</div>
+          <h3>Habit Tracker</h3>
+          <p>Build positive routines, celebrate streaks, and create lasting change.</p>
+          <a href="#get-started">Explore feature ↗</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon pink-bg">↗</div>
+          <h3>Insightful Analytics</h3>
+          <p>Understand your productivity patterns and discover where your time goes.</p>
+          <a href="#get-started">Explore feature ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how-section" id="how-it-works">
+      <div class="how-content">
+        <span class="section-label">HOW IT WORKS</span>
+        <h2>Get Started in <span>3 Simple Steps.</span></h2>
+        <p class="how-description">
+          Start small, stay consistent, and watch your progress grow.
+          MindFlow makes productivity feel simple.
+        </p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">01</div>
+            <div><h3>Create Your Account</h3><p>Set up your workspace in just a few moments.</p></div>
+          </div>
+          <div class="step">
+            <div class="step-number">02</div>
+            <div><h3>Set Your Goals</h3><p>Choose your priorities and plan your next steps.</p></div>
+          </div>
+          <div class="step">
+            <div class="step-number">03</div>
+            <div><h3>Build Better Habits</h3><p>Track your wins and make progress every day.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="how-visual">
+        <div class="illustration-card">
+          <div class="illustration-orbit orbit-one"></div>
+          <div class="illustration-orbit orbit-two"></div>
+          <div class="illustration-emoji">🎯</div>
+          <div class="illustration-spark spark-one">✦</div>
+          <div class="illustration-spark spark-two">✧</div>
+          <div class="illustration-message">Small steps.<br><strong>Big results!</strong></div>
+          <div class="goal-card">
+            <span>YOUR WEEKLY GOAL</span>
+            <strong>Make it happen ✨</strong>
+            <div class="goal-progress"><span></span></div>
+            <small>5 of 7 days completed</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="section-heading">
+        <span class="section-label">REAL PEOPLE, REAL RESULTS</span>
+        <h2>What Our Users <span>Say.</span></h2>
+        <p>Good habits make a big difference. Here's what our community thinks.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <div class="testimonial-top">
+            <img src="https://i.pravatar.cc/100?img=47" alt="Sarah Johnson">
+            <div><h3>Sarah Johnson</h3><span>Marketing Manager</span></div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"MindFlow has completely changed how I manage my day. I'm more focused and finally feel in control of my workload."</blockquote>
+        </article>
+
+        <article class="testimonial-card featured-review">
+          <div class="testimonial-top">
+            <img src="https://i.pravatar.cc/100?img=12" alt="Mike Chen">
+            <div><h3>Mike Chen</h3><span>Software Engineer</span></div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"The habit tracker is a game changer! I've built better routines and can actually see the progress I'm making."</blockquote>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-top">
+            <img src="https://i.pravatar.cc/100?img=5" alt="Emily Davis">
+            <div><h3>Emily Davis</h3><span>University Student</span></div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <blockquote>"Beautiful design, easy to use, and packed with features. MindFlow helps me balance study time and personal goals."</blockquote>
+        </article>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="cta-section" id="get-started">
+      <div class="cta-content">
+        <span class="section-label">YOUR NEXT CHAPTER STARTS HERE</span>
+        <h2>Make Today Count.<br><span>Your Future Self Will Thank You.</span></h2>
+        <p>Build better habits, reach your goals, and make room for what matters most.</p>
+        <a href="mailto:hello@example.com?subject=Getting%20Started%20with%20MindFlow" class="btn btn-primary">
+          Get Started for Free <span>→</span>
+        </a>
+        <div class="cta-note">No credit card required · Start in minutes</div>
+      </div>
+      <div class="cta-decoration">M</div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="#home" class="logo"><span class="logo-icon">M</span> MindFlow</a>
+        <p>Better habits. Clearer goals.<br>A brighter future.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Community</h4>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#get-started">Get Started</a>
+        <a href="mailto:hello@example.com">Contact Us</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Follow Along</h4>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/" aria-label="LinkedIn">in</a>
+          <a href="https://www.instagram.com/" aria-label="Instagram">◎</a>
+          <a href="https://github.com/" aria-label="GitHub">⌘</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> MindFlow. Demo project.</span>
+      <span>Made for better days ✦</span>
+    </div>
+  </footer>
+
+</body>
+</html>
